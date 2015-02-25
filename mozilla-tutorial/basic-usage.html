@@ -9,20 +9,38 @@
 			if (canvas.getContext) {
 				var ctx = canvas.getContext("2d");
 
-				// Set style first to be applied on fillRect
 				ctx.fillStyle = "rgb(200, 0, 0)";
+        		ctx.fillRect (0, 0, 450, 50);
 
-				// Render a Rectagle and fill with styles 
-        		ctx.fillRect (10, 10, 55, 50);
+        		ctx.fillStyle = "rgb(0, 200, 0)";
+        		ctx.fillRect (0, 50, 450, 50);
+
+        		ctx.fillStyle = "rgb(2450, 0, 242)";
+        		ctx.fillRect (0, 100, 450, 50);
+
+        		ctx.fillStyle = "rgb(231, 85, 255)";
+        		ctx.fillRect (0, 150, 450, 50);
+
+        		ctx.fillStyle = "rgb(0, 174, 255)";
+        		ctx.fillRect (0, 200, 450, 50);
 
 
-        		ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
-    		    ctx.fillRect (30, 30, 55, 50);
+        		ctx.fillStyle = "rgba(255, 255, 0, 0.5)";
+        		ctx.fillRect (50, 0, 50, 250);
+
+        		ctx.fillStyle = "rgba(0, 174, 255, 0.5)";
+        		ctx.fillRect (150, 0, 50, 250);
+
+        		ctx.fillStyle = "rgba(255, 100, 0, 0.5)";
+        		ctx.fillRect (250, 0, 50, 250);
+			
+        		ctx.fillStyle = "rgba(73, 255, 98, 0.5)";
+        		ctx.fillRect (350, 0, 50, 250);
 			}
 		}
 	</script>
 </head>
 <body onload="draw();">
-	<canvas id="tutorial" width="150" height="150"></canvas>
+	<canvas id="tutorial" width="500" height="500"></canvas>
 </body>
 </html>
