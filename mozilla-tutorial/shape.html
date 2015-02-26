@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shapes</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript">
+		function draw () {
+			var canvas = document.getElementById('canvas');
+			if (canvas.getContext) {
+				var ctx = canvas.getContext('2d');
+
+				// Rectangle
+				// draw rectangle
+				ctx.fillRect(25, 25, 100, 100);
+
+				// draw a transparent rectangle
+				ctx.clearRect(45,45,60,60);
+
+				// draw rectanle border
+				ctx.strokeRect(50,50,50,50);
+
+				// triangle
+				ctx.beginPath();
+				ctx.moveTo(200, 25);
+				ctx.lineTo(250, 75);
+				ctx.lineTo(200, 125);
+				ctx.fill();
+
+				// octagon
+				ctx.beginPath();
+				ctx.moveTo(200, 200);
+				ctx.lineTo(250, 200);
+				ctx.lineTo(300, 250);
+				ctx.lineTo(300, 300);
+				ctx.lineTo(250, 350);
+				ctx.lineTo(200, 350);
+				ctx.lineTo(150, 300);
+				ctx.lineTo(150, 250);
+				ctx.lineTo(200, 200);
+				ctx.fill();
+			}
+		}
+	</script>
+</head>
+<body onload="draw()">
+	<canvas id="canvas" width="800" height="800"></canvas>
+</body>
+</html>
