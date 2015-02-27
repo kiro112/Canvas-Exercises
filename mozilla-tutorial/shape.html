@@ -38,6 +38,22 @@
 				ctx.lineTo(150, 250);
 				ctx.lineTo(200, 200);
 				ctx.fill();
+
+				// Circle
+				ctx.beginPath();
+				ctx.arc(500, 150, 100, 0, Math.PI*2, true);
+				ctx.moveTo(575, 150);
+				ctx.arc(500, 150, 75, 0, Math.PI, false);
+				ctx.moveTo(470, 120);
+				ctx.arc(460, 120, 10, 0, Math.PI*2, true);
+				ctx.moveTo(550, 120);
+				ctx.arc(540, 120, 10, 0, Math.PI*2, true);
+
+				ctx.moveTo(500, 150);
+				ctx.lineTo(520, 180);
+				ctx.lineTo(480, 180);
+				ctx.lineTo(500, 150);
+				ctx.stroke();
 			}
 		}
 	</script>
